@@ -35,7 +35,7 @@ export default function Home() {
             </div>
             <div
               className="m-4 p-4 border-2 bg-white border-solid rounded-lg shadow-lg hover:shadow-black hover:translate-x-1"
-              onClick={() => setCycles(cycles - 1)}
+              onClick={() => setCycles(cycles > 0 ? cycles - 1 : cycles)}
             >
               <AiOutlineMinus size={50} />
             </div>
